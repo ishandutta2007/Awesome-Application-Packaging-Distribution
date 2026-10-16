@@ -30,6 +30,8 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
 
 - [Open-Source GitHub Projects](#open-source-github-projects)
@@ -40,37 +42,19 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
+## Sector Overview & Market Dynamics
+
+The global application packaging, deployment, and distribution software market is estimated at approximately **$8.1 Billion** (scaling toward **$18.8B–$23.1B** at ~11.2% CAGR), while broader enterprise software and digital distribution networks exceed **$130+ Billion**. The sector exhibits **moderate-to-high fragmentation** across operating systems, runtime formats (Flatpak, Snap, AppImage, OCI containers), and ecosystem build infrastructure, but experiences strong **winner-take-all / concentrated network effects** within specific sub-segments—such as Docker Hub dominating container registries and Flathub dominating desktop sandboxed runtimes.
+
 ## SaaS/Hosted Platforms
 
-
-
-- **[Launchpad](https://launchpad.net/)**  
-
-  **Ubuntu's build and distribution platform** powering Personal Package Archives (PPAs). **Builds Debian source packages for multiple Ubuntu releases and architectures** using the same infrastructure as the official Ubuntu archive . **You upload a signed source package** (`.dsc` and related files), and Launchpad compiles binaries for each declared architecture . **Versioning rules**: PPA versions use suffixes like `~noble1` to sort below official versions, with incrementing numbers for re-uploads . **Build priority scoring** based on pocket, component, and urgency . **Free for free software packages**—accepts only source uploads, not pre-built `.deb` files .
-
-
-
-- **[Open Build Service (OBS)](https://build.opensuse.org/)**  
-
-  **The most comprehensive open-source build and distribution platform** from openSUSE. **Builds packages for multiple distributions and architectures**—RPM-style, Debian-style, and Arch-style formats from a single project . **Service files** (`_service`) automate source fetching, version setting, and verification . **Webhook-triggered builds** on GitHub push for development channels . **Package splitting** into subpackages for each distribution family . **The standard for projects distributing across multiple Linux ecosystems**—used by openSUSE, KDE, and countless community projects.
-
-
-
-- **[Snap Store](https://snapcraft.io/)**  
-
-  **Canonical's centralized store for Snap packages**. **Channel-based distribution** (stable, candidate, beta, edge) with automatic updates and rollback . **Store-managed signing and assertions**—the daemon and store semantics are inseparable from the user experience . **Linux Mint blocks Snap by default** due to Canonical's commercial control . **The most tightly integrated packaging system** for Ubuntu and derivatives.
-
-
-
-- **[Flathub](https://flathub.org/)**  
-
-  **The primary repository for Flatpak applications**. **OSTree-based distribution** with deduplication, delta updates, and repository-native rollback . **Sandboxed by default** with runtime and permission declarations in manifests . **Per-user or system-wide installation** from remotes . **The community standard** for sandboxed Linux desktop applications.
-
-
-
-- **[Docker Hub](https://hub.docker.com/)**  
-
-  **The largest container registry** with millions of images. **Container-based distribution** for server and cloud applications. **Immutable image tags** and **multi-arch manifests** for cross-platform deployment.
+| Platform | Company / Backer | Company Scale (Revenue / Valuation) | Pricing (Starting Paid Tier) | Free Tier Limits | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **[Open Build Service (OBS)](https://build.opensuse.org/)** | SUSE / openSUSE Project | **~$800M Revenue** (~$4B–$6B Valuation) | Free community instance; Enterprise SUSE Linux Enterprise Server / Rancher contract extensions start at custom enterprise tiers | 100% Free Forever; default home project worker builds subject to worker hardware constraints (~50 GB disk / standard memory pools per worker job) | Open-source multi-distro build service compiling RPM, DEB, and Arch binaries across architectures. |
+| **[Docker Hub](https://hub.docker.com/)** | Docker, Inc. | **~$200M ARR** (~$2.1B Valuation) | Pro Tier starts at **$9/user/month** (annual) or $11/user/month (monthly); Team Tier starts at $15/user/month | Docker Personal (Free Forever): 1 private repository, unlimited public repositories, 200 image pulls / 6 hours (authenticated) or 100 pulls / 6 hours (anonymous), 1 Docker Scout repo; Docker Desktop free only for entities with <250 employees and <$10M ARR | Container image registry and automated build service for cloud and server workloads. |
+| **[Snap Store](https://snapcraft.io/)** | Canonical Ltd. | **$291M Revenue** (~$15.5M Operating Profit) | Public publishing is **Free**; dedicated enterprise Brand Stores and private proxy appliances start via commercial enterprise agreements | Free Forever: Unlimited public snap package hosting and distribution; free multi-arch remote builds on Launchpad infrastructure; Snap Store Proxy free tier limited to 25 evaluation devices | Canonical's centralized store and delivery network for SquashFS-confined Snap packages. |
+| **[Launchpad](https://launchpad.net/)** | Canonical Ltd. | **$291M Revenue** (~$15.5M Operating Profit) | **Free** for open-source / public projects; private commercial PPA hosting and enterprise build features included via Ubuntu Pro / Canonical enterprise subscriptions | Free Forever: 8 GiB disk space quota per Personal Package Archive (PPA) for source package builds across supported Ubuntu releases and architectures | Ubuntu's source package build farm and PPA repository service. |
+| **[Flathub](https://flathub.org/)** | Flathub LLC / GNOME Foundation | **~$1M–$1.2M Annual Budget** (Non-profit foundation & grants) | Free for publishing; developer monetization retains standard payment processing fees (Stripe fees + small platform maintenance contribution) | Free Forever: Unlimited public application listings and OSTree hosting; builds subject to Flatpak quality criteria, sandboxing rules, and review guidelines | Community app store and centralized OSTree repository for sandboxed Flatpak applications. |
 
 
 
