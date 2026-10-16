@@ -1,52 +1,44 @@
-# Awesome-Application-Packaging-Distribution
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Application Packaging and Distribution" width="100%" />
+</p>
 
-## Top Application Packaging & Distribution Ecosystem
+# 📦 Awesome Application Packaging & Distribution
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Application-Packaging-Distribution/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Application-Packaging-Distribution?style=social" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Application-Packaging-Distribution/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Application-Packaging-Distribution?style=social" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Application-Packaging-Distribution/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Application-Packaging-Distribution?color=brightgreen" alt="Issues"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Application-Packaging-Distribution/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Application-Packaging-Distribution?color=blue" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+> 🚀 **The definitive curated index of SaaS platforms and Open-Source software for Application Packaging, Cross-Platform Desktop Bundling, Binary Distribution, Linux Formats (Flatpak, Snap, AppImage, DEB, RPM), and Cloud Build Pipelines.**
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
+---
 
-*Focused on Native Packages, Universal Formats & Build Service Infrastructure*  
+## 📑 Table of Contents
 
-**Last updated: October 2026**
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Frameworks for Custom Build Pipelines](#️-frameworks-for-custom-build-pipelines)
+- [📈 Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚖️ Disclaimer](#️-disclaimer)
 
+---
 
+## 🌐 Sector Overview & Market Dynamics
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Application Packaging & Distribution**. These tools enable developers to bundle, sign, and distribute software across Linux distributions—from native `.deb` and RPM packages to self-contained AppImages, sandboxed Flatpaks, and cloud build services that compile for dozens of targets automatically.
+The global application packaging, deployment, and distribution software market is valued at approximately **$8.1 Billion** (projected to reach **$18.8B–$23.1B** at ~11.2% CAGR), with broader enterprise software delivery networks commanding over **$130+ Billion**. 
 
+The sector experiences **moderate-to-high fragmentation** across platforms, runtime isolation formats (Flatpak, Snap, AppImage, OCI containers), and ecosystem build infrastructure, but exhibits pronounced **winner-take-all / concentrated network effects** within specific sub-domains—most notably Docker Hub dominating cloud container distribution, Flathub emerging as the Linux desktop standard, and Tauri / Electron dominating cross-platform desktop binary packaging.
 
+---
 
-**Examples** include Flatpak, Snap, AppImage, Docker, Nix, Guix, Launchpad, Open Build Service, RPM, and Debian DEB (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, cross-distribution builds, and open packaging standards—ideal for application developers, release engineers, and maintainers seeking transparent, vendor-independent distribution.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## Sector Overview & Market Dynamics
-
-The global application packaging, deployment, and distribution software market is estimated at approximately **$8.1 Billion** (scaling toward **$18.8B–$23.1B** at ~11.2% CAGR), while broader enterprise software and digital distribution networks exceed **$130+ Billion**. The sector exhibits **moderate-to-high fragmentation** across operating systems, runtime formats (Flatpak, Snap, AppImage, OCI containers), and ecosystem build infrastructure, but experiences strong **winner-take-all / concentrated network effects** within specific sub-segments—such as Docker Hub dominating container registries and Flathub dominating desktop sandboxed runtimes.
-
-## SaaS/Hosted Platforms
+## ☁️ SaaS & Hosted Platforms
 
 | Platform | Company / Backer | Company Scale (Revenue / Valuation) | Pricing (Starting Paid Tier) | Free Tier Limits | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -56,134 +48,82 @@ The global application packaging, deployment, and distribution software market i
 | **[Launchpad](https://launchpad.net/)** | Canonical Ltd. | **$291M Revenue** (~$15.5M Operating Profit) | **Free** for open-source / public projects; private commercial PPA hosting and enterprise build features included via Ubuntu Pro / Canonical enterprise subscriptions | Free Forever: 8 GiB disk space quota per Personal Package Archive (PPA) for source package builds across supported Ubuntu releases and architectures | Ubuntu's source package build farm and PPA repository service. |
 | **[Flathub](https://flathub.org/)** | Flathub LLC / GNOME Foundation | **~$1M–$1.2M Annual Budget** (Non-profit foundation & grants) | Free for publishing; developer monetization retains standard payment processing fees (Stripe fees + small platform maintenance contribution) | Free Forever: Unlimited public application listings and OSTree hosting; builds subject to Flatpak quality criteria, sandboxing rules, and review guidelines | Community app store and centralized OSTree repository for sandboxed Flatpak applications. |
 
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[AppImage](https://github.com/AppImage/AppImageKit)**  
-
-  **The "one app = one file" portable Linux format** (MIT). **A single self-contained ELF executable** combining a runtime with an `AppDir`-style application tree . **User marks it executable and runs it**—no installation, no package manager, no root required . **Portability is a deliberate dependency-selection exercise**, not "copy every shared object"—core system libraries and FUSE define the compatibility boundary . **`appimagetool`** creates AppImages from existing `AppDir` directories, embedding the runtime and filesystem image . **Update information** can be embedded for delta updates via zsync on GitHub Releases . **No sandboxing by default** and **no universal auto-update mechanism**—direct-download signature/checksum only . **Best for**: lowest-friction CLI/GUI distribution, portable apps, users who want to run without installing.
-
-
-
-- **[Flatpak](https://github.com/flatpak/flatpak)**  
-
-  **The sandboxed, runtime-based Linux distribution system** (LGPL-2.1). **Packages applications against named runtimes** and distributes content through **OSTree repositories** . **Manifests declare runtime/SDK, permissions (finish args), and build modules** . **Installation may be per-user or system-wide**; remotes, refs, and OSTree content make **deduplication, updates, and rollback repository-native** . **A `.flatpak` bundle is a transport form**, not the whole Flatpak model . **Sandboxed by default**—applications request permissions explicitly. **Best for**: managed desktop application distribution with sandboxing, Flathub publishing, teams wanting repository-based updates.
-
-
-
-- **[Snap (snapd)](https://github.com/snapcore/snapd)**  
-
-  **The snapd and snap tools enabling systems to work with `.snap` files** (GPL-3.0). **A snap is a read-only SquashFS filesystem with metadata consumed by `snapd`** . **Bases, interfaces, confinement levels, assertions, and store channels** are part of the system—**the installed artifact is mounted rather than expanded into normal filesystem ownership** . **Store/channel semantics and the daemon are inseparable from the user experience** . **Confined applications** with interface-based permission model. **Best for**: Ubuntu-native distribution, automatic updates with rollback, confined applications.
-
-
-
-- **[Docker](https://github.com/docker/docker)**  
-
-  **The container platform** (Apache-2.0) that defined application packaging for the cloud era. **Immutable images** bundling application and dependencies. **Multi-arch manifests** for x86_64, ARM64, and more. **The standard for server application distribution**.
-
-
-
-- **[Nix](https://github.com/NixOS/nix)**  
-
-  **The purely functional package manager** (LGPL-2.1). **Reproducible builds** with **content-addressed derivations**. **Immutable package store** at `/nix/store`—multiple versions coexist without conflict. **Atomic upgrades and rollbacks**. **The most rigorous approach to reproducible packaging**.
-
-
-
-- **[Guix](https://github.com/guix-mirror/guix)**  
-
-  **The GNU package manager** (GPL-3.0) with **Scheme-based package definitions**. **Reproducible builds** and **transactional upgrades**. **Bootstrappable** from a minimal binary seed. **The most ideologically committed free software distribution**.
-
-
-
-- **[Debian Packaging (dpkg)](https://github.com/Debian/dpkg)**  
-
-  **The low-level package manager for Debian-based systems** (GPL-2.0). **`.deb` is an `ar` archive** containing `debian-binary`, a compressed control archive, and a compressed data archive . **Control metadata names package, architecture, version, dependencies, maintainer scripts, and conffile behavior** . **APT adds repository indexes, dependency resolution, and authenticated acquisition** . **The foundation of Ubuntu, Debian, and derivatives**.
-
-
-
-- **[RPM](https://github.com/rpm-software-management/rpm)**  
-
-  **The RPM Package Manager** (GPL-2.0). **Stores package metadata in headers and installed payload in a cpio-based archive** . **Capability dependencies, scriptlets, file metadata, and package signatures** are native concepts . **DNF/Zypper-family clients add repository metadata and resolution** . **RPM's epoch/version/release ordering and distro policy are not interchangeable with Debian's** . **The foundation of Fedora, RHEL, openSUSE, and derivatives**.
-
-
-
-- **[FPM (Effing Package Management)](https://github.com/jordansissel/fpm)**  
-
-  **The packaging Swiss Army knife** (MIT). **Builds `.deb`, RPM, Arch, and other packages from a single command**—converts between formats without rewriting spec files. **The pragmatic choice** for developers who need to ship for multiple distros without learning each packaging system deeply.
-
-
-
-- **[nfpm](https://github.com/goreleaser/nfpm)**  
-
-  **A simple, modern tool for building `.deb`, RPM, and APK packages** (MIT). **YAML-based configuration**—define package metadata once, build for multiple formats. **The Go ecosystem standard** for package generation, integrated with GoReleaser.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[distrobox](https://github.com/89luca89/distrobox)** — Use any Linux distribution inside your terminal (GPL-3.0) . **The most accessible way to test packages across distros** without VMs or dual-booting.
-
-- **[toolbx](https://github.com/containers/toolbox)** — Tool for containerized command line environments on Linux (Apache-2.0) . **The Fedora-native alternative** to distrobox.
-
-- **[alien](https://github.com/linuxmafia/alien)** — Convert between RPM, DEB, and other package formats (GPL-2.0) . **The original format converter**—still useful for quick conversions, with caveats about maintainer script compatibility.
-
-- **[checkinstall](https://github.com/giuliojiang/checkinstall)** — Build installation packages from `make install` output (GPL-2.0) . **The fastest path from source to package** for projects without existing packaging.
-
-- Community **n8n** workflows for package build notification and release automation.
-
-
-
-**Frameworks for building custom systems**: Combine **Open Build Service** for multi-distro builds with **FPM** or **nfpm** for quick package generation, **AppImage** for portable distribution, **Flatpak** for sandboxed desktop apps, and **Launchpad** for Ubuntu PPAs—creating a comprehensive cross-distribution packaging pipeline.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Packaging and distribution tools must comply with distribution policies, licensing requirements, and trademark rules for each target ecosystem.
-
-- **Native packages and universal formats solve different problems.** `.deb` and RPM integrate with distro package databases and dependency resolution—**repository and policy work are part of delivery** . AppImage, Flatpak, and Snap bundle dependencies to avoid "dependency hell"—at the cost of disk space and, for Snap, **Canonical's centralized store** . **They are not interchangeable.**
-
-- **AppImage optimizes direct execution; Flatpak and Snap optimize managed installation.** AppImage has **no auto-update by default** and **no sandboxing**—the user manages updates and trusts the download . Flatpak and Snap provide **repository-based updates with rollback** and **sandboxed execution** .
-
-- **Launchpad only accepts source packages.** You upload a signed `.dsc` and related files—**not pre-built `.deb`** . **Versioning discipline is mandatory**: PPA versions must be unique and increment on re-upload .
-
-- **Open Build Service is the cross-distribution standard.** It builds RPM, Debian, and Arch packages from the same project, with **service files automating source fetching and verification** . **If you need to ship for multiple distros, OBS is the reference.**
-
-- Self-hosted open-source solutions require proper security hardening, signing key management, and ongoing maintenance. **Package signing is trust infrastructure**—compromised keys undermine the entire distribution chain.
-
-
+---
+
+## 💻 Open-Source GitHub Projects
+
+Curated list of leading open-source application packaging tools, container runtimes, binary bundlers, and package managers, **sorted descending by GitHub star count**. Beside each project name, the social star badge links directly to the project's stargazers page.
+
+- **[Tauri](https://github.com/tauri-apps/tauri)** [![GitHub stars](https://img.shields.io/github/stars/tauri-apps/tauri?style=social&color=white)](https://github.com/tauri-apps/tauri/stargazers) — Build smaller, faster, and more secure desktop and mobile applications with a web frontend. Bundles native installers (.msi, .exe, .dmg, .deb, .appimage).
+- **[Docker Moby](https://github.com/moby/moby)** [![GitHub stars](https://img.shields.io/github/stars/moby/moby?style=social&color=white)](https://github.com/moby/moby/stargazers) — The open-source framework and container engine (Apache-2.0) that defined modern application packaging for cloud, server, and CI/CD pipelines.
+- **[Podman](https://github.com/containers/podman)** [![GitHub stars](https://img.shields.io/github/stars/containers/podman?style=social&color=white)](https://github.com/containers/podman/stargazers) — Daemonless, rootless container engine for developing, managing, and running OCI containers and multi-arch pods across systems.
+- **[Nix](https://github.com/NixOS/nix)** [![GitHub stars](https://img.shields.io/github/stars/NixOS/nix?style=social&color=white)](https://github.com/NixOS/nix/stargazers) — The purely functional package manager (LGPL-2.1) ensuring reproducible builds, atomic upgrades, multiple version coexistence, and instant rollback.
+- **[GoReleaser](https://github.com/goreleaser/goreleaser)** [![GitHub stars](https://img.shields.io/github/stars/goreleaser/goreleaser?style=social&color=white)](https://github.com/goreleaser/goreleaser/stargazers) — Deliver Go binaries as fast and easily as possible. Automates cross-compilation, artifact generation, changelogs, Homebrew taps, and multi-distro packaging.
+- **[Packer](https://github.com/mitchellh/packer)** [![GitHub stars](https://img.shields.io/github/stars/mitchellh/packer?style=social&color=white)](https://github.com/mitchellh/packer/stargazers) — Build automated machine images, cloud AMIs, and containers for multiple platforms from a single source configuration.
+- **[electron-builder](https://github.com/electron-userland/electron-builder)** [![GitHub stars](https://img.shields.io/github/stars/electron-userland/electron-builder?style=social&color=white)](https://github.com/electron-userland/electron-builder/stargazers) — A complete solution to package and build ready-for-distribution Electron apps for macOS, Windows, and Linux with auto-update support out of the box.
+- **[distrobox](https://github.com/89luca89/distrobox)** [![GitHub stars](https://img.shields.io/github/stars/89luca89/distrobox?style=social&color=white)](https://github.com/89luca89/distrobox/stargazers) — Use any Linux distribution inside your terminal with tight host integration. The most accessible tool to test and validate packages across distros without VMs.
+- **[FPM (Effing Package Management)](https://github.com/jordansissel/fpm)** [![GitHub stars](https://img.shields.io/github/stars/jordansissel/fpm?style=social&color=white)](https://github.com/jordansissel/fpm/stargazers) — The packaging Swiss Army knife (MIT). Converts directories, gems, npm, and tarballs into `.deb`, `.rpm`, `.apk`, and OSX packages in seconds.
+- **[Skopeo](https://github.com/containers/skopeo)** [![GitHub stars](https://img.shields.io/github/stars/containers/skopeo?style=social&color=white)](https://github.com/containers/skopeo/stargazers) — Command line utility that performs various operations on container images and image registries without requiring root or a running daemon.
+- **[AppImageKit](https://github.com/AppImage/AppImageKit)** [![GitHub stars](https://img.shields.io/github/stars/AppImage/AppImageKit?style=social&color=white)](https://github.com/AppImage/AppImageKit/stargazers) — The "one app = one file" portable Linux package format. Self-contained ELF executable combining an application tree with a lightweight runtime.
+- **[Flatpak](https://github.com/flatpak/flatpak)** [![GitHub stars](https://img.shields.io/github/stars/flatpak/flatpak?style=social&color=white)](https://github.com/flatpak/flatpak/stargazers) — The sandboxed, runtime-based Linux desktop distribution system (LGPL-2.1). Distributes content via OSTree repositories with deduplication, runtimes, and delta updates.
+- **[Toolbx](https://github.com/containers/toolbox)** [![GitHub stars](https://img.shields.io/github/stars/containers/toolbox?style=social&color=white)](https://github.com/containers/toolbox/stargazers) — Containerized command-line environments on Linux for software development and debugging (Apache-2.0).
+- **[Cloud Native Buildpacks (pack)](https://github.com/buildpacks/pack)** [![GitHub stars](https://img.shields.io/github/stars/buildpacks/pack?style=social&color=white)](https://github.com/buildpacks/pack/stargazers) — CLI for building production-ready OCI container images from source code without writing Dockerfiles.
+- **[nfpm](https://github.com/goreleaser/nfpm)** [![GitHub stars](https://img.shields.io/github/stars/goreleaser/nfpm?style=social&color=white)](https://github.com/goreleaser/nfpm/stargazers) — nfpm is not fpm. A simple, flexible, modern packaging tool written in Go to build `.deb`, `.rpm`, `.apk`, and `archlinux` packages from a single YAML spec.
+- **[ORAS](https://github.com/oras-project/oras)** [![GitHub stars](https://img.shields.io/github/stars/oras-project/oras?style=social&color=white)](https://github.com/oras-project/oras/stargazers) — OCI Registry As Storage: distribute arbitrary files, artifacts, configuration bundles, and SBOMs using standard OCI container registries.
+- **[Snapd](https://github.com/snapcore/snapd)** [![GitHub stars](https://img.shields.io/github/stars/snapcore/snapd?style=social&color=white)](https://github.com/snapcore/snapd/stargazers) — The daemon and tooling powering `.snap` packages. Mounts read-only SquashFS images with strict AppArmor/seccomp confinement and automated channel rollouts.
+- **[Open Build Service (OBS)](https://github.com/openSUSE/open-build-service)** [![GitHub stars](https://img.shields.io/github/stars/openSUSE/open-build-service?style=social&color=white)](https://github.com/openSUSE/open-build-service/stargazers) — The open-source automated build distribution engine powering build.opensuse.org. Compiles DEB, RPM, and Arch packages simultaneously across multiple hardware architectures.
+- **[RPM](https://github.com/rpm-software-management/rpm)** [![GitHub stars](https://img.shields.io/github/stars/rpm-software-management/rpm?style=social&color=white)](https://github.com/rpm-software-management/rpm/stargazers) — The core RPM Package Manager powering Fedora, RHEL, openSUSE, and CentOS distributions.
+- **[GNU Guix](https://github.com/guix-mirror/guix)** [![GitHub stars](https://img.shields.io/github/stars/guix-mirror/guix?style=social&color=white)](https://github.com/guix-mirror/guix/stargazers) — Functional GNU package management system and distribution featuring Scheme-based reproducible environments and transactional updates.
+- **[alien](https://github.com/linuxmafia/alien)** [![GitHub stars](https://img.shields.io/github/stars/linuxmafia/alien?style=social&color=white)](https://github.com/linuxmafia/alien/stargazers) — Veteran format conversion utility between RPM, Debian `.deb`, Stampede `.slp`, and Slackware `.tgz` packages.
+- **[checkinstall](https://github.com/giuliojiang/checkinstall)** [![GitHub stars](https://img.shields.io/github/stars/giuliojiang/checkinstall?style=social&color=white)](https://github.com/giuliojiang/checkinstall/stargazers) — Monitor `make install` file writes and generate clean `.deb`, `.rpm`, or Slackware packages directly from source builds.
 
 ---
 
+## 🛠️ Frameworks for Custom Build Pipelines
 
+To build a resilient enterprise packaging and delivery pipeline:
+1. **Desktop Cross-Platform**: Use **Tauri** or **electron-builder** to package native installers across Windows, macOS, and Linux.
+2. **Multi-Distro Packaging**: Combine **nfpm** or **FPM** to emit native `.deb`, `.rpm`, and `.apk` packages directly from CI workflows.
+3. **Sandboxed Distribution**: Deploy to **Flathub** via Flatpak manifests or publish to the **Snap Store** for auto-updating channels.
+4. **Cloud & Artifact Delivery**: Package multi-arch container images using **Podman** / **Docker** and store software artifacts in OCI registries with **ORAS**.
+5. **Cross-Distro Build Farms**: Utilize self-hosted **Open Build Service** or **Launchpad** PPAs for automated architecture compiles.
 
-**Made for application developers, release engineers, and maintainers building transparent distribution solutions.**  
+---
 
-Let's make Application Packaging & Distribution more open, data-driven, and reproducible.
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Application-Packaging-Distribution&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Application-Packaging-Distribution&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you for visiting and supporting this ecosystem initiative! If you find this curated collection helpful for your software engineering, DevOps pipelines, or open-source distribution journey:
+
+- ⭐ **Star this repository** to show your appreciation and boost visibility!
+- 🍴 **Fork and contribute** to add new tools, update documentation, or fix outdated information.
+- 📢 **Share with fellow developers, sysadmins, and DevOps engineers**.
+- ☕ **Buy me a coffee / Become a sponsor**: Support continued curation and open-source maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 🤝 How to Contribute
+
+1. Fork the repository.
+2. Add or update tool entries in `README.md` adhering to the tabular/badge format.
+3. Include: Tool Name, Link, 1–2 sentence description, and license/tier classification.
+4. Submit a Pull Request with a clear summary of your additions.
+
+---
+
+## ⚖️ Disclaimer
+
+- This is a **community-curated** list — not exhaustive and not an official commercial endorsement.
+- Packaging and distribution tools must comply with upstream distribution policies, licensing requirements, and trademark rules for each target ecosystem.
+- Self-hosted distribution solutions require proper security hardening, signing key management, and ongoing maintenance. Package signing is critical trust infrastructure.
+
+---
+
+<p align="center">
+  <b>Built with ❤️ for application developers, DevOps engineers, and release maintainers worldwide.</b>
+</p>
